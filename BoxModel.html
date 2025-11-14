@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+  #main{
+    width: 880px;
+    height: 200px;
+    background-color: #999;
+    border: 2px solid #000;
+    display: flex;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+    margin-right: 260px;
+  }
+  .box:nth-child-(4){
+    margin-right: 0;
+
+  }
+</style>
+<body>
+    <h1 style="text-align: center; color: blue;"><u>BOX MODEL</u></h1>
+     <box id="main"></box>
+     
+    
+</body>
+</html>

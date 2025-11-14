@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 40px;
+            background-color: aliceblue;
+
+        }
+        form {
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: aliceblue;
+
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 100;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px aliceblue;
+        }
+        button {
+            margin-top: 5px;
+            padding: 10px 15px;
+            background-color: rgb(130, 130, 245);
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" > Hotel Room Booking Form</h1>
+    <form action="/submit-boking" method="Post">
+        <label for="name">Full Name</label><br>
+        <input type="text"id="name" name="name"required  ><br><br>
+        <label for="Email address">Email Address:-</label><br>
+        <input type="text" placeholder="Enter Your Email"><br><br>
+        <label for="checkin">check-in date</label><br>
+        <input type="date" placeholder="checkin"><br><br>
+        <label for="checkout">check-out date</label><br>
+        <input type="Date" id="checkout" name="checkout" ><br><br>
+        <label type="room">room type</label><br>
+        <select aria-placeholder="room"><br>
+            <option value="single">Single room</option>
+            <option value="double">Double room</option>
+            <option valu="suite">Suite</option>
+        </select><br><br>
+
+
+        <lable for="Guests">Number of guests</lable>
+        <input type="number" id="guests" name="guests"  min= "1" max="10" ><br><br>
+
+
+        <lable for="requests"> Special requests</lable>
+        <textarea id="requests" name="requests" row="4" placeholder="Any special requests or note----"></textarea><br><br>
+
+        <button type="submit"> book now</button>
+     </form>
+    
+</body>
+</html>

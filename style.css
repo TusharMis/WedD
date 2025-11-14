@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding: 0;
+    background-color: rgb(46, 43, 41);
+    background-image: url(https://images2.alphacoders.com/722/72270.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    /* background: url(https://tse1.mm.bing.net/th/id/OIP.Ly5RLZJ18-J-5ISgJStuXwHaFS?rs=1&pid=ImgDetMain&o=7&rm=3); */
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-weight: 300;
+        font-style: italic;
+        color: #999;
+        text-align: right;
+        text-decoration: underline;
+        text-shadow: 1px 0px 1px #f04;
+    }
+}
