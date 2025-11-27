@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wireframe Layout</title>
+  <style>
+    :root{
+      --gap: 16px;
+      --border: 2px solid #333;
+      --bg: #f7f7f7;
+      --box: #ffffff;
+      --accent: #eaeaea;
+      --text: #222;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.4;
+    }
+
+    .page{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    .header{
+      display: grid;
+      gap: var(--gap);
+    }
+
+    .header-top{
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: var(--gap);
+    }
+
+    .box{
+      background: var(--box);
+      border: var(--border);
+      padding: 16px;
+    }
+
+    .header-logo{ min-height: 80px; display: grid; place-items: center; font-weight: 600; }
+    .header-banner{ min-height: 80px; display: grid; place-items: center; font-weight: 600; }
+
+    .header-bar{
+      background: var(--accent);
+      border: var(--border);
+      padding: 16px;
+      min-height: 56px;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+    }
+
+    /* Main content: Left / Center / Right */
+    .content{
+      display: grid;
+      grid-template-columns: 260px 1fr 260px;
+      gap: var(--gap);
+      margin-top: var(--gap);
+    }
+
+    .left-blocks,
+    .right-blocks{
+      min-height: 300px;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+    }
+
+    /* Center column */
+    .center{
+      display: grid;
+      gap: var(--gap);
+      grid-auto-rows: minmax(60px, auto);
+    }
+
+    .center-center-blocks{
+      min-height: 120px;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+    }
+
+    .center-mid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap);
+    }
+
+    .center-left-blocks,
+    .center-right-blocks{
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+    }
+
+    .module-contents{
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .footer-bar{
+      margin-top: var(--gap);
+      background: var(--accent);
+      border: var(--border);
+      padding: 16px;
+      min-height: 60px;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 1024px){
+      .content{
+        grid-template-columns: 220px 1fr 220px;
+      }
+      .header-top{
+        grid-template-columns: 200px 1fr;
+      }
+    }
+
+    @media (max-width: 768px){
+      .header-top{
+        grid-template-columns: 1fr;
+      }
+      .content{
+        grid-template-columns: 1fr;
+      }
+      .center-mid{
+        grid-template-columns: 1fr;
+      }
+      .left-blocks, .right-blocks{
+        min-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+     
+    <!-- Main content -->
+    <main class="content">
+      <aside class="box left-blocks">Left Blocks</aside>
+
+      <section class="center">
+        <div class="box center-center-blocks">Center-Center Blocks</div>
+
+        <div class="center-mid">
+          <div class="box center-left-blocks">Center-Left Blocks</div>
+          <div class="box center-right-blocks">Center-Right Blocks</div>
+        </div>
+
+        <div class="box module-contents">Module Contents</div>
+      </section>
+
+      <aside class="box right-blocks">Right Blocks</aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">Footer Bar</footer>
+
+  </div>
+</body>
+</html>

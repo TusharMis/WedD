@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center; /* Center card horizontally */
+      align-items: center;     /* Center card vertically */
+      height: 100vh;           /* Full viewport height */
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 400px;
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;    /* Align items in center */
+      padding: 20px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column; /* Vertical arrangement */
+      align-items: center;    /* Center text */
+    }
+
+    .info h2 {
+      margin: 10px 0;
+      color: #2c3e50;
+    }
+
+    .info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between; /* Spread buttons */
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .btn {
+      flex: 1; /* Equal width */
+      margin: 0 5px;
+      padding: 10px;
+      text-align: center;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="c:\Users\mishr\OneDrive\Pictures\Saved Pictures\WhatsApp Image 2025-01-26 at 13.43.23_e5b0f1f4.jpg c:\Users\mishr\OneDrive\Pictures\Camera imports\2024-11-17\1000045402.jpg" alt="Student Photo" class="profile-pic">
+    <div class="info">
+      <h2>Tushar Mishra</h2>
+      <p>Undergraduate Engineering Student</p>
+      <p>ABES Engineering College</p>
+    </div>
+    <div class="buttons">
+      <a href="#" class="btn">Profile</a>
+      <a href="#" class="btn">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
