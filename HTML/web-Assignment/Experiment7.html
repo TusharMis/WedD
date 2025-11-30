@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* BLOCK ELEMENT (div) */
+        .header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* INLINE ELEMENT (span) */
+        .info span {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* INLINE-BLOCK NAVIGATION MENU */
+        nav ul {
+            list-style: none;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #666;
+            margin-right: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* FLOAT EXAMPLE */
+        .box-container {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background: #4a90e2;
+            color: white;
+            float: left;
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* CLEAR FIX */
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">Navigation Menu Using block, inline, inline-block, float & clear</div>
+
+    <div class="info" style="padding: 15px;">
+        This is an example of <span>BLOCK, INLINE, INLINE-BLOCK, FLOAT</span> in HTML.
+    </div>
+
+    <!-- NAVIGATION USING INLINE-BLOCK -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- FLOAT EXAMPLE BOXES -->
+    <div class="box-container">
+        <div class="box">Float Box 1</div>
+        <div class="box">Float Box 2</div>
+        <div class="box">Float Box 3</div>
+        <div class="clear"></div>
+    </div>
+
+    <footer>Footer Section (Clear Applied Above)</footer>
+
+</body>
+</html>
