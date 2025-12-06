@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Product Grid</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+  
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+    }
+
+    .img-box {
+      width: 100%;
+      height: 200px;
+      background: #ddd;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      background: #111;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff9800;
+    }
+
+    @media (max-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Product Showcase</h1>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <div class="img-box">
+        <img src="https://cdn.neowin.com/news/images/uploaded/2024/07/1720628215_samsung_galaxy_buds3_pro.jpg" alt="Product Image" />
+      </div>
+      <div class="title">Wireless Earbuds</div>
+      <div class="price">₹999</div>
+      <a class="btn" href="#">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <div class="img-box">
+        <img src="https://m.media-amazon.com/images/I/71qq-p26D4L.jpg" alt="Product Image" />
+      </div>
+      <div class="title">Smart Watch</div>
+      <div class="price">₹1,499</div>
+      <a class="btn" href="#">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <div class="img-box">
+        <img src="https://i5.walmartimages.com/asr/afa9d092-f123-4a87-bee7-957d275b0fa2_1.54d062626b9d627d399adeba9a555418.jpeg" alt="Product Image" />
+      </div>
+      <div class="title">Bluetooth Speaker</div>
+      <div class="price">₹799</div>
+      <a class="btn" href="#">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <div class="img-box">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.BC2H5w0p_Ya-r8xd4sRTBgHaHa?pid=Api&P=0&h=180" alt="Product Image" />
+      </div>
+      <div class="title">Gaming Mouse</div>
+      <div class="price">₹599</div>
+      <a class="btn" href="#">Buy Now</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,53 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
-    <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-        html,body{
-            width: 100%;
-            height: 100%;
-        }
-        #main{
-            height: 100%;
-            width: 100%;
-        }
-        #header{
-            width: 100%;
-            height: 10%;
-            background-color: blue;
-            display: flex;
-            align-items: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
 
-        .box1{
-            margin: 20px;
-            color: aliceblue;
-            font-family: 'Gill Sans';
-        }
-        #box1:hover{
-            background-color: lightcyan;
-        }
-    </style>
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+   
+    .card {
+      background: #fff;
+      width: 260px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      text-align: center;
+    }
+
+   
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #e94707;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      margin: 0 auto 15px;
+      font-weight: bold;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .course {
+      font-size: 15px;
+      color: #555;
+    }
+    .college{
+        font-size: 15px;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div id="main">
-       <div id="header">
-        <div class="box1"><h1>Codinglab</h1></div>
-        <div class="box1"><p>Home</p></div>
-        <div class="box1"><p>About</p></div>
-        <div class="box1">Services</div>
-        <div class="box1">Contact</div>
 
+  <h2 style="text-align:center; margin-bottom:25px;">Student Profile Cards</h2>
 
-       </div>
+  <div class="container">
+
+    <!-- Student 1 -->
+    <div class="card">
+      <div class="profile-pic">T.M</div>
+      <div class="name">Tushar Mishra</div>
+      <div class="course">B.Tech - CSE(AI & ML)</div>
+      <div class="college">ABES Engineering college</div>
+
     </div>
-    
+
+    <!-- Student 2 -->
+    <div class="card">
+      <div class="profile-pic">V</div>
+      <div class="name">Vishal</div>
+      <div class="course">B.Tech - CSE(AI & ML)</div>
+       <div class="college">ABES Engineering college</div>
+    </div>
+
+    <!-- Student 3 -->
+    <div class="card">
+      <div class="profile-pic">R.S</div>
+      <div class="name">Rohit Singh</div>
+      <div class="course">B.Tech - CSE(AI & ML)</div>
+       <div class="college">ABES Engineering college</div>
+    </div>
+
+  </div>
+
 </body>
 </html>
