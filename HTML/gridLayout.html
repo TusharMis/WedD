@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid Layout</title>
+    <style>
+        *,html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1400px;
+            height: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 80px 500px 150px;
+            gap: 10px;
+            align-content: center;
+        }
+        header,nav,footer{
+            background-color: rgb(157, 173, 168);
+            display: grid;
+            place-items: center;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        #left{
+            height: 500px;
+            display: grid;
+            place-items: center;
+            background-color: #5a9ba0;
+        }
+        #right{
+            height: 500px;
+            display: grid;
+            grid-template-rows: 1fr 1fr; /* दो हिस्सों में बाँट दिया */
+            gap: 10px;
+            background-color: #5a9ba0;
+            padding: 10px;
+        }
+        .right-top, .right-bottom{
+            display: grid;
+            place-items: center;
+            background-color: #87c5c9;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header><h2>Header</h2></header>
+        <nav><h2>Nav</h2></nav>
+        <section>
+            <div id="left"><h2>Left</h2></div>
+            <div id="right">
+                <div class="right-top"><h2>Right Top</h2></div>
+                <div class="right-bottom"><h2>Right Bottom</h2></div>
+            </div>
+        </section>
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>
